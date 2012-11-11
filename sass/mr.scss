@@ -1,0 +1,192 @@
+@import '_define';
+
+body {
+  background:#ffffff;
+}
+footer {
+  @include Body;
+  @include colordrill(#ffffff);
+  background: #000000;
+  padding:20px; 
+}
+
+
+header {
+  #site-info {
+    @media (min-width:960px) {
+      position:static;
+      // position:absolute;
+      top:0;
+      left:0;
+    }
+
+    display:block;
+    margin:0 0 40px 0;
+    padding:0;
+    background: #333333;
+    @include clearfix;
+    @include colordrill(#ffffff);
+    @include text-decoration-none;
+    @include SanSerif; 
+    @include H3;    
+    font-style: normal; 
+    text-transform: lowercase; 
+
+    #site-name {
+      display:block;
+      margin:0 0 0 0;
+      text-align: center;
+      @include H3;   
+      @media (min-width:560px) {
+        display: inline-block;
+      }
+    }
+
+    a {
+      display:inline-block;
+      padding:10px 20px; 
+      margin:0px; 
+    }  
+
+    nav {
+      display:inline-block;
+      ul {
+        margin:0;
+        padding-left:0;
+        li {
+          list-style:none;
+          display: inline-block;
+          padding:0;
+        }
+      }
+    }
+  }
+
+  #section-info {
+    img {
+      width:100%;
+      max-width:250px;
+    }
+
+    h1.section {
+      @include H1;
+      @include Serif;   
+      line-height:1em; 
+      text-transform: none; 
+      a {
+        color:$black; 
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+@media (min-width:960px) {
+  header h1.section:before {
+    content: url(../images/curve.jpg);
+    padding:0 20px 0px 0;
+    float:left;
+  }
+  header h1.section:after {
+    clear:both;
+    display: block;
+    float: none;
+    content: ' ';
+  }
+  .life header h1.section {
+    max-width:500px;
+  }  
+  .theology header h1.section:before {
+    content: url(../images/cross.jpg);
+    padding:0 20px 0px 0;
+    float:left;
+  }
+  .experiment header h1.section:before {
+    content: url(../images/notes.jpg);
+    padding:0 20px 0px 0;
+  }
+}
+
+
+
+
+
+
+.tabs {
+  margin:0;
+}
+hr {
+  border:none; 
+  border-bottom:solid thin $downWhite; 
+  margin:10px 60px 10px 0px;
+}
+
+#content img {
+  max-width:100%;
+}
+
+#content .node .content img {
+  float:left;
+  clear:left;
+  margin:10px 20px 20px 0;
+  max-width:100%;
+}
+
+#highlighted {
+  background:$downWhite; 
+  color:$downGrey; 
+  padding:20px 20px; 
+  border-bottom:none; 
+  font-size:36px;
+  a { color:$midGrey; }
+  div, p {margin:0;}
+  .region {
+    @include Center; 
+    padding:0px 20px; 
+    text-align: center;
+  }
+}
+
+.sidebar #block-views-slideshow-block {
+  margin:0 0 10px; 
+  padding:0; 
+  border:none;
+}
+
+.content {font-size:1.071em;}
+
+.node .field-type-image {
+  float:left; 
+  margin-right:20px;
+}
+
+@media (max-width:560px) {
+  .comment {
+    .attribution {
+      display: inline-block;
+      width:auto;
+
+    }
+    .comment-text {
+      display: inline-block;
+      width:auto;
+    }
+    .comment-arrow {
+      display: none;
+    }
+  } 
+  .comment-form,
+  .one-sidebar .comment-form {    
+    input, .form-text, .form-select {
+      display:inline-block;
+      width:auto;
+    }
+  }
+}
+
+
+/* Styles */
+.chimp-button {
+  @include chimp-button;
+}

@@ -1,0 +1,41 @@
+
+/* BLOCKS */
+#content .block-block {
+  border: 1px solid;
+  padding: 15px 20px;
+  margin: 0 0 20px;
+}
+#content .block-block h2 {
+  margin: 0 0 0.5em;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 5px;
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.2;
+}
+#content .block-block .content {
+  line-height: 1.4;
+}
+
+#content .block-block {
+  background-color: #f6f6f2;
+  border-color: #f9f9f9;
+}
+
+#block-block-24 {background:none;}
+#block-block-22 .content a {
+  margin-right:40px; 
+  display:block; 
+  // float:left;
+}
+
+.not-front #content #block-block-9 {
+  background:none; 
+  border:none; 
+  padding:0px;
+}
+
+.blockinset {
+  background:$downWhite; 
+  margin:20px 0px; 
+  padding:20px 20px 10px;
+}

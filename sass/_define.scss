@@ -1,0 +1,130 @@
+$upBlack:#333333; 
+$downGrey:#666666;
+$darkGrey:$downGrey;
+$midGrey:#999999;
+$upGrey:#CCCCCC;
+$downWhite:#EEEEEE;
+
+$black:#000000;
+$grey:$midGrey;
+$white:#FFFFFF;
+
+@mixin Serif {font-family: Georgia, "Times New Roman", sans-serif;}
+@mixin SanSerif {font-family: Arial, sans-serif;}
+@mixin Center {margin:0 auto;}
+@mixin FullWidth {max-width:960px;}
+
+@mixin H1 {font-size:78px;}
+@mixin H2 {font-size:36px;}
+@mixin H3 {font-size:18px; line-height:18px;}
+@mixin Body {font-size:12px;}
+
+
+/* Universal Functions */
+@mixin clearfix {
+  /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+  *zoom: 1;
+  /* For modern browsers */
+  &:before,
+  &:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+  &:after {
+      clear: both;
+  }
+}
+
+@mixin colordrill ($color:#ffffff) {
+  color:$color;
+  &:hover {
+    color:$color;
+  }
+  a {
+    color:$color;
+    &:hover {
+      color:$color;
+    }
+  }
+}
+
+@mixin text-decoration-none {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@mixin border-radius ($number:20px) {
+  -webkit-border-radius: $number; 
+  -moz-border-radius: $number; 
+  -o-border-radius: $number; 
+  border-radius: $number; 
+}
+
+@mixin border-box {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */  
+}
+
+/* Layout */
+
+@mixin Fluid {
+  margin:0 auto; 
+  max-width:960px;
+}
+
+// @mixin onewidth {
+//   width:100%;
+//   max-width:960px;
+//   margin:0 auto;
+// }
+
+// @mixin twowidth {
+//   @include onewidth; 
+// }
+
+
+
+
+/* Styles */
+
+@mixin chimp-button {
+  @include colordrill(#ffffff);
+  background-color: #aaaaaa; 
+
+  display: block; 
+  margin: 0 5px 10px 0; 
+  padding: 0 22px; 
+  width: auto;
+  height: 32px; 
+
+  clear:both; 
+  border: 0 none; 
+  border-radius:4px; 
+  cursor: pointer; 
+
+  font-size:15px; 
+  font-weight: bold; 
+  font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+  text-align: center; 
+  @include text-decoration-none;
+
+  line-height: 32px; 
+  vertical-align: top; 
+  white-space: nowrap; 
+
+  &:hover {
+    background-color:#777777;    
+  }
+}

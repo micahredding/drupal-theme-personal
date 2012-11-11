@@ -1,0 +1,46 @@
+
+/* MAILCHIMP */
+#sidebar-second #mc_embed_signup {
+  clear:left;
+  @include Body; 
+  @include SanSerif; 
+  padding:0 !important; 
+  margin-bottom:30px;
+  
+  form {padding:0 !important;}
+}
+
+
+#topbar #mc_embed_signup form {
+  
+  label {
+    display:inline-block; 
+    margin-right:10px; 
+    color:$downGrey;
+    margin-top:1px;
+  }
+  
+  div {
+    display:inline-block; 
+    width:180px;
+    width:100px !important; 
+    float:right;
+  }
+
+  div input.button {
+    width:100px !important; 
+    margin-bottom:0px; 
+    vertical-align:middle;
+    margin-top:1px; 
+    display:inline-block; 
+    width:180px;
+  }
+
+  input.email {
+    display:inline-block;  
+    width:170px !important; 
+    margin-bottom:0px; 
+    margin-right:0px;
+  }
+  
+}

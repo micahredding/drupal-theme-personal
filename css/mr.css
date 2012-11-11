@@ -1,0 +1,212 @@
+/* Universal Functions */
+/* Layout */
+/* Styles */
+body {
+  background: #ffffff; }
+
+footer {
+  font-size: 12px;
+  color: white;
+  background: #000000;
+  padding: 20px; }
+  footer:hover {
+    color: white; }
+  footer a {
+    color: white; }
+    footer a:hover {
+      color: white; }
+
+header #site-info {
+  display: block;
+  margin: 0 0 40px 0;
+  padding: 0;
+  background: #333333;
+  /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+  *zoom: 1;
+  /* For modern browsers */
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-style: normal;
+  text-transform: lowercase; }
+  @media (min-width: 960px) {
+    header #site-info {
+      position: static;
+      top: 0;
+      left: 0; } }
+  header #site-info:before, header #site-info:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  header #site-info:after {
+    clear: both; }
+  header #site-info:hover {
+    color: white; }
+  header #site-info a {
+    color: white; }
+    header #site-info a:hover {
+      color: white; }
+  header #site-info:hover {
+    text-decoration: none; }
+  header #site-info a {
+    text-decoration: none; }
+    header #site-info a:hover {
+      text-decoration: none; }
+  header #site-info #site-name {
+    display: block;
+    margin: 0 0 0 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px; }
+    @media (min-width: 560px) {
+      header #site-info #site-name {
+        display: inline-block; } }
+  header #site-info a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0px; }
+  header #site-info nav {
+    display: inline-block; }
+    header #site-info nav ul {
+      margin: 0;
+      padding-left: 0; }
+      header #site-info nav ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 0; }
+header #section-info img {
+  width: 100%;
+  max-width: 250px; }
+header #section-info h1.section {
+  font-size: 78px;
+  font-family: Georgia, "Times New Roman", sans-serif;
+  line-height: 1em;
+  text-transform: none; }
+  header #section-info h1.section a {
+    color: black;
+    text-decoration: none; }
+
+@media (min-width: 960px) {
+  header h1.section:before {
+    content: url(../images/curve.jpg);
+    padding: 0 20px 0px 0;
+    float: left; }
+
+  header h1.section:after {
+    clear: both;
+    display: block;
+    float: none;
+    content: ' '; }
+
+  .life header h1.section {
+    max-width: 500px; }
+
+  .theology header h1.section:before {
+    content: url(../images/cross.jpg);
+    padding: 0 20px 0px 0;
+    float: left; }
+
+  .experiment header h1.section:before {
+    content: url(../images/notes.jpg);
+    padding: 0 20px 0px 0; } }
+.tabs {
+  margin: 0; }
+
+hr {
+  border: none;
+  border-bottom: solid thin #eeeeee;
+  margin: 10px 60px 10px 0px; }
+
+#content img {
+  max-width: 100%; }
+
+#content .node .content img {
+  float: left;
+  clear: left;
+  margin: 10px 20px 20px 0;
+  max-width: 100%; }
+
+#highlighted {
+  background: #eeeeee;
+  color: #666666;
+  padding: 20px 20px;
+  border-bottom: none;
+  font-size: 36px; }
+  #highlighted a {
+    color: #999999; }
+  #highlighted div, #highlighted p {
+    margin: 0; }
+  #highlighted .region {
+    margin: 0 auto;
+    padding: 0px 20px;
+    text-align: center; }
+
+.sidebar #block-views-slideshow-block {
+  margin: 0 0 10px;
+  padding: 0;
+  border: none; }
+
+.content {
+  font-size: 1.071em; }
+
+.node .field-type-image {
+  float: left;
+  margin-right: 20px; }
+
+@media (max-width: 560px) {
+  .comment .attribution {
+    display: inline-block;
+    width: auto; }
+  .comment .comment-text {
+    display: inline-block;
+    width: auto; }
+  .comment .comment-arrow {
+    display: none; }
+
+  .comment-form input, .comment-form .form-text, .comment-form .form-select,
+  .one-sidebar .comment-form input,
+  .one-sidebar .comment-form .form-text,
+  .one-sidebar .comment-form .form-select {
+    display: inline-block;
+    width: auto; } }
+/* Styles */
+.chimp-button {
+  color: white;
+  background-color: #aaaaaa;
+  display: block;
+  margin: 0 5px 10px 0;
+  padding: 0 22px;
+  width: auto;
+  height: 32px;
+  clear: both;
+  border: 0 none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+  text-align: center;
+  text-decoration: none;
+  line-height: 32px;
+  vertical-align: top;
+  white-space: nowrap; }
+  .chimp-button:hover {
+    color: white; }
+  .chimp-button a {
+    color: white; }
+    .chimp-button a:hover {
+      color: white; }
+  .chimp-button:hover {
+    text-decoration: none; }
+  .chimp-button a {
+    text-decoration: none; }
+    .chimp-button a:hover {
+      text-decoration: none; }
+  .chimp-button:hover {
+    background-color: #777777; }

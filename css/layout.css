@@ -1,0 +1,113 @@
+/* Universal Functions */
+/* Layout */
+/* Styles */
+/* LAYOUT */
+body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+  *zoom: 1;
+  /* For modern browsers */ }
+  header:before, header:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  header:after {
+    clear: both; }
+  header h1 {
+    margin: 0; }
+  header #section-info {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 20px; }
+
+#page-wrapper {
+  /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+  *zoom: 1;
+  /* For modern browsers */
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 20px;
+  background: none; }
+  #page-wrapper:before, #page-wrapper:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  #page-wrapper:after {
+    clear: both; }
+  #page-wrapper h1 {
+    margin: 0;
+    padding: 0; }
+  #page-wrapper h2 {
+    margin: 0;
+    padding: 0; }
+  #page-wrapper #page {
+    background: none; }
+    #page-wrapper #page #main-wrapper {
+      margin-top: 40px; }
+      #page-wrapper #page #main-wrapper #content h1 {
+        margin-bottom: 20px; }
+
+footer {
+  /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+  *zoom: 1;
+  /* For modern browsers */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  padding: 0 20px; }
+  footer:before, footer:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  footer:after {
+    clear: both; }
+  footer .internal {
+    margin: 0 auto;
+    max-width: 960px; }
+
+/* Internal Layout */
+#main-wrapper #main {
+  margin-top: 0; }
+  #main-wrapper #main .sidebar .section {
+    padding-top: 0; }
+
+/* Sidebars */
+@media (min-width: 960px) {
+  body.one-sidebar #content, body.one-sidebar .sidebar {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    -webkit-box-sizing: border-box;
+    /* Safari */ }
+  body.one-sidebar #content {
+    width: 77%;
+    float: left;
+    padding-right: 40px; }
+  body.one-sidebar .sidebar {
+    width: 23%;
+    float: left; } }
+
+/* Footer Blocks */
+footer .block {
+  float: left;
+  clear: none !important;
+  margin: 20px !important; }
+footer #block-search-form .content {
+  padding: 0; }
