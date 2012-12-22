@@ -95,5 +95,12 @@ footer {
   #block-search-form .content {
     padding:0;
   }
+  .region-footer {
+    @include clearfix;
+  }
+  .google-plus {
+    @include clearfix;
+    margin:20px;
+  }
 }
 

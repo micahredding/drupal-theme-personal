@@ -68,18 +68,28 @@ header #site-info {
       header #site-info #site-name {
         display: inline-block; } }
   header #site-info a {
-    display: inline-block;
+    display: block;
+    text-align: center;
     padding: 10px 20px;
     margin: 0px; }
+    @media (min-width: 560px) {
+      header #site-info a {
+        display: inline-block; } }
   header #site-info nav {
-    display: inline-block; }
+    display: block; }
+    @media (min-width: 560px) {
+      header #site-info nav {
+        display: inline-block; } }
     header #site-info nav ul {
       margin: 0;
       padding-left: 0; }
       header #site-info nav ul li {
         list-style: none;
-        display: inline-block;
+        display: block;
         padding: 0; }
+        @media (min-width: 560px) {
+          header #site-info nav ul li {
+            display: inline-block; } }
 header #section-info img {
   width: 100%;
   max-width: 250px; }

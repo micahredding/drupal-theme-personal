@@ -149,8 +149,8 @@
   <footer>
     <div class="internal">
     <?php print render($page['footer']); ?>
-    <a href="https://plus.google.com/110800681150805455169?
- rel=author">Google</a>
+    <div class="google-plus"><a href="https://plus.google.com/110800681150805455169?
+ rel=author">Google +</a></div>
     </div>
   </footer>
 

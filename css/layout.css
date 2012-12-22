@@ -111,3 +111,32 @@ footer .block {
   margin: 20px !important; }
 footer #block-search-form .content {
   padding: 0; }
+footer .region-footer {
+  /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+  *zoom: 1;
+  /* For modern browsers */ }
+  footer .region-footer:before, footer .region-footer:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  footer .region-footer:after {
+    clear: both; }
+footer .google-plus {
+  /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+  *zoom: 1;
+  /* For modern browsers */
+  margin: 20px; }
+  footer .google-plus:before, footer .google-plus:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  footer .google-plus:after {
+    clear: both; }
